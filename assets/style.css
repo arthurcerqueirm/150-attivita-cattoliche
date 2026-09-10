@@ -15,3 +15,14 @@
 .bonus-cover span,.bonus-cover strong{position:relative;text-shadow:0 2px 8px rgba(0,0,0,.38)}
 @media(max-width:620px){.worksheet-art{height:170px}.sheet>span{font-size:8px;margin:8px 4px 5px}}
 @media(prefers-reduced-motion:reduce){.bonus-cover img{transition:none}}
+
+/* Bonus — evidenzia che sono gratis + allinea i valori */
+.bonuses h2 em{color:var(--green)}
+.bonus-total{text-align:center;font-size:13px;color:#8a7a5c;margin:0 0 34px}
+.bonus-total s{color:#b6a884}
+.bonus-total strong{color:var(--green-dark);font-weight:800}
+.bonus-grid article{display:flex;flex-direction:column}
+.bonus-grid h3{min-height:35px}
+.bonus-grid .bonus-value{display:flex;align-items:center;gap:8px;padding:0 14px;margin-top:auto;font-size:11px}
+.bonus-grid .bonus-value s{color:#b6a884;font-weight:700}
+.bonus-grid .bonus-value em{font-style:normal;font-weight:900;letter-spacing:.09em;color:#fff;background:var(--green);border-radius:999px;padding:4px 10px;font-size:9px}
