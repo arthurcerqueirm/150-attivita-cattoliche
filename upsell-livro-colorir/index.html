@@ -46,7 +46,7 @@
             <div class="old">Prezzo normale: €24,90</div>
             <div class="price">€9,90 <small>pagamento unico</small></div>
             <div class="reason">Risparmi €15 perché hai già acquistato le 150 attività.</div>
-            <a class="cta accept" href="#">Sì, voglio aggiungere i 100 disegni</a>
+            <a class="cta" href="#offerta">Sì, voglio aggiungere i 100 disegni</a>
             <div class="micro">Accesso digitale immediato • Nessun abbonamento</div>
           </div>
         </div>
@@ -91,20 +91,17 @@
         <h2>Aggiungi ora Il Grande Libro Cattolico da Colorare</h2>
         <p>Non devi compilare nuovamente i tuoi dati. Accetta l'offerta e ricevi subito il libro insieme al prodotto appena acquistato.</p>
         <div class="price-row"><span class="old">€24,90</span><span class="price">€9,90</span></div>
-        <a class="cta accept" href="#">Sì, aggiungi il libro al mio ordine</a>
+        <div id="hotmart-sales-funnel"></div>
         <div class="micro">Pagamento unico • Accesso immediato • 100% digitale</div>
         <div class="once">Attenzione: se lasci questa pagina, lo sconto di €15 verrà rimosso e questa offerta non sarà più visualizzata.</div>
-        <a class="decline" href="#">No, grazie. Preferisco rinunciare ai 100 disegni e continuare senza questa offerta.</a>
       </div></div>
     </section>
   </main>
   <footer class="footer">© 2026 Piccoli nella Fede • Materiale digitale per bambini</footer>
-  <div class="mobile-bar"><a class="cta accept" href="#">Aggiungi ora per €9,90</a></div>
+  <div class="mobile-bar"><a class="cta" href="#offerta">Aggiungi ora per €9,90</a></div>
+  <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
   <script>
-    const ACCEPT_URL = '#INSERISCI_LINK_ACCETTA';
-    const DECLINE_URL = '#INSERISCI_LINK_RIFIUTA';
-    document.querySelectorAll('.accept').forEach(a=>a.href=ACCEPT_URL);
-    document.querySelectorAll('.decline').forEach(a=>a.href=DECLINE_URL);
+    checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
   </script>
 </body>
 </html>
