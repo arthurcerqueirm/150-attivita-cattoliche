@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
-  <style>#vsl-video{position:relative;max-width:min(720px,94%);max-height:500px;width:auto;height:auto;border-radius:16px;box-shadow:0 20px 22px rgba(63,47,0,.16);z-index:1;background:#000}</style>
+  <style>.vsl-embed{position:relative;width:min(720px,94%);border-radius:16px;overflow:hidden;box-shadow:0 20px 22px rgba(63,47,0,.16);z-index:1;background:#000}</style>
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -45,9 +45,10 @@
 
     <div class="hero-visual">
       <div class="sunburst"></div>
-      <video id="vsl-video" controls playsinline preload="metadata" poster="assets/product-bundle.png">
-        <source src="assets/vsl.mp4" type="video/mp4">
-      </video>
+      <div class="vsl-embed">
+        <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1226479079?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Vsl"></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
     </div>
 
     <div class="stats">
