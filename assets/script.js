@@ -20,3 +20,11 @@ function closeModal(){
 essentialButton.addEventListener('click',openModal);
 modal.querySelectorAll('[data-close]').forEach(element=>element.addEventListener('click',closeModal));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
+const reviewsMarquee = document.getElementById('reviews-marquee');
+if(reviewsMarquee){
+  const hold = () => reviewsMarquee.classList.add('is-held');
+  const release = () => reviewsMarquee.classList.remove('is-held');
+  reviewsMarquee.addEventListener('pointerdown', hold);
+  ['pointerup','pointercancel','pointerleave'].forEach(type=>reviewsMarquee.addEventListener(type, release));
+}

@@ -25,6 +25,19 @@
 .bonus-grid h3{min-height:35px}
 .bonus-grid .bonus-value{display:flex;align-items:center;gap:8px;padding:0 14px;margin-top:auto;font-size:11px}
 .bonus-grid .bonus-value s{color:#b6a884;font-weight:700}
+/* Recensioni — carosello automatico */
+.reviews{background:var(--soft);padding:75px 0;overflow:hidden}
+.reviews h2{font-size:clamp(1.8rem,3.6vw,3.2rem);line-height:1.08;letter-spacing:-.045em;text-align:center;margin:10px auto 14px;font-weight:900}
+.marquee{position:relative;margin-top:30px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.marquee-track{display:flex;gap:18px;width:max-content;animation:marquee-scroll 60s linear infinite}
+.marquee-group{display:flex;gap:18px}
+.marquee.is-held .marquee-track{animation-play-state:paused}
+@media(hover:hover){.marquee:hover .marquee-track{animation-play-state:paused}}
+.review-card{flex:0 0 auto;width:288px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(30,40,48,.09)}
+.review-card img{display:block;width:100%;height:auto;aspect-ratio:640/614}
+@keyframes marquee-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 9px))}}
+@media(max-width:620px){.reviews{padding:58px 0}.reviews h2{font-size:1.8rem}.review-card{width:min(78vw,280px)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.marquee{overflow-x:auto}}
 .guarantee{grid-template-columns:200px 1fr}
 .seal-img{display:block;width:200px;height:auto;filter:drop-shadow(0 12px 18px rgba(20,70,30,.18))}
 @media(max-width:620px){.guarantee{grid-template-columns:1fr}.seal-img{width:170px;margin:auto}}
