@@ -25,6 +25,7 @@
 .bonus-grid h3{min-height:35px}
 .bonus-grid .bonus-value{display:flex;align-items:center;gap:8px;padding:0 14px;margin-top:auto;font-size:11px}
 .bonus-grid .bonus-value s{color:#b6a884;font-weight:700}
+.premium{scroll-margin-top:34px}
 /* Recensioni — carosello automatico */
 .reviews{background:var(--soft);padding:75px 0;overflow:hidden}
 .reviews h2{font-size:clamp(1.8rem,3.6vw,3.2rem);line-height:1.08;letter-spacing:-.045em;text-align:center;margin:10px auto 14px;font-weight:900}
