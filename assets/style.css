@@ -35,7 +35,7 @@
 .marquee.is-held .marquee-track{animation-play-state:paused}
 @media(hover:hover){.marquee:hover .marquee-track{animation-play-state:paused}}
 .review-card{flex:0 0 auto;width:288px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(30,40,48,.09)}
-.review-card img{display:block;width:100%;height:auto;aspect-ratio:640/614}
+.review-card img{display:block;width:100%;height:auto;aspect-ratio:640/678}
 @keyframes marquee-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 9px))}}
 @media(max-width:620px){.reviews{padding:58px 0}.reviews h2{font-size:1.8rem}.review-card{width:min(78vw,280px)}}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.marquee{overflow-x:auto}}
